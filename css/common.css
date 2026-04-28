@@ -1,3 +1,7 @@
 /* 모든 페이지에 공통 적용될 스타일 */
 @import url('normalize.css');
 @import url('reset.css');
+
+body{
+  font-family: "Open Sans", sans-serif;
+}
