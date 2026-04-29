@@ -48,6 +48,9 @@ body{
 .text-heading-xl{
   font-size: var(--heading--x-l); 
   line-height: calc(var(--base-unit) * 3); /* 27의 3배 = 81 */
+  color: var(--hero--title);
+  text-transform: uppercase;
+  letter-spacing: 2%;
 }
 .text-heading-s{
   font-size: var(--heading--s); 
@@ -56,6 +59,7 @@ body{
 .text-body-l{
   font-size: var(--body--l); 
   line-height: calc(var(--base-unit) * 2); /* 27의 2배 = 54 */
+  font-weight: 300;
 }
 .text-body-m{
   font-size: var(--body--m);
@@ -93,6 +97,10 @@ body{
   background: var(--primary);
   color: var(--secondary);
 }
+.btn.big{
+  height: calc(var(--base-unit) * 2);
+  padding: 0 30px;
+} /* 클래스 사이 공백 없으면 자신 중에 / 있으면 자식 중에 */
 
 
 /* 폼 요소 */
