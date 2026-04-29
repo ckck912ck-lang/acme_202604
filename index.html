@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         <h1 class="logo">
           <a href="index.html">
             <img src="images/logo.png" alt="acme logo">
-            <span>ACME</span>
+            <span class="hidden">ACME</span>
           </a>
         </h1>
         <nav>
@@ -43,6 +43,7 @@
         </nav>
       </div>
     </header>
+
     <main>
       <section class="hero inner-top-pd">
         <div class="container d-flex flex-column align-items-center g-1">
@@ -52,7 +53,38 @@
           <img src="images/hero_image.png" alt="">
         </div>
       </section>
-      <section class="features container inner-pd"></section>
+      <section class="features container inner-pd">
+        <h2 class="hidden">Features</h2>
+        <ul class="d-flex justify-content-between">
+          <li>
+            <div class="icon">
+              <span class="material-icons">person</span>
+            </div>
+            <h3 class="text-heading-s">This is a feature title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            </p>
+          </li>
+          <li>
+            <div class="icon">
+              <span class="material-icons">list</span>
+            </div>
+            <h3 class="text-heading-s">This is a feature title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            </p>
+          </li>
+          <li>
+            <div class="icon">
+              <span class="material-icons">star</span>
+            </div>
+            <h3 class="text-heading-s">This is a feature title</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+            </p>
+          </li>
+        </ul>
+      </section>
       <hr class="container">
       <section class="testimonial container inner-pd"></section>
       <section class="cta inner-pd"></section>
