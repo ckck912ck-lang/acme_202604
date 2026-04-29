@@ -37,6 +37,7 @@
 
 body{
   font-family: "Open Sans", sans-serif;
+  font-size: var(--base-font);
 }
 
 /* 폰트 위계 */
@@ -78,4 +79,43 @@ body{
 .btn-primary{
   background: var(--primary);
   color: var(--secondary);
+}
+
+/* 폼 요소 */
+.hero{
+  background: var(--hero);
+}
+form{
+  width: 350px;
+  display: flex;
+  flex-direction: column; /* 원래 세로 배치였는데 flex column 준 이유 : 요소 사이에 간격 주려고 */
+  gap: 10px;
+}
+form .field{
+  height: calc(var(--base-unit) * 2);
+  background: var(--white);
+  border-radius: 3px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: var(--light--gray);
+}
+form .field input{
+  font-style: italic;
+  color: var(--black);
+}
+form .field input::placeholder{
+  color: var(--super--light--gray);
+} /* 콜론 :: 반드시 2개 있어야 함! */
+button{
+  height: calc(var(--base-unit) * 2);
+  border: 1px solid var(--white);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: calc(var(--base-font) * 1.125); /* 18/16= 1.125 */
+  text-transform: uppercase;
+  font-weight: bold;
 }
