@@ -25,22 +25,23 @@
     <h2>제목위계</h2>
 
     <!-- Typography System -->
-
-    <!-- Heading -->
-    <h1 class="text-heading-xl">Heading XL</h1>
-    <h2 class="text-heading-s">Heading S</h2>
-
-    <!-- Body -->
-    <p class="text-body-l">Body Large Text</p>
-    <p class="text-body-m">Body Medium Text</p>
-    <p class="text-body-m-plus">Body M+</p>
-
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#" class="text-nav">Nav Item</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <!-- Heading -->
+      <h1 class="text-heading-xl">Heading XL</h1>
+      <h2 class="text-heading-s">Heading S</h2>
+  
+      <!-- Body -->
+      <p class="text-body-l">Body Large Text</p>
+      <p class="text-body-m">Body Medium Text</p>
+      <p class="text-body-m-plus">Body M+</p>
+  
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#" class="text-nav">Nav Item</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <h2>컬러</h2>
     <h2>버튼링크</h2>
@@ -76,5 +77,46 @@
       </form>
     </div>
     <h2>레이아웃</h2>
+    <div class="container inner-pd">
+      content
+    </div>
+    <div class="container">
+      content
+    </div>
+    <h3>flex utility</h3>
+    <div class="d-flex">
+      <div>content</div>
+      <div>content</div>
+    </div>
+    <div class="d-flex flex-column">
+      <div>content</div>
+      <div>content</div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div>content</div>
+      <div>content</div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div>content</div>
+      <div>content</div>
+    </div>
+    <div class="d-flex align-items-center">
+      <div>content</div>
+      <div>content</div>
+    </div>
   </body>
+  <!-- 
+    flex utility
+      d-flex    display:flex
+      column   display:flex;  flex-direction:column;
+      aic       display:flex, align-items:center
+      jcc  display:flex, justify-content:center
+      sb   display:flex, justify-content:space-between;
+    
+    d-flex
+      flex-column 
+      justify-content-center
+      justify-content-between
+      align-items-center
+  -->
 </html>

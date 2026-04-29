@@ -2,6 +2,7 @@
 
 @import url('normalize.css');
 @import url('reset.css');
+@import url('flex-utility.css');
 
 /* :root 최상위 선택자 */
 :root{
@@ -118,4 +119,16 @@ button{
   font-size: calc(var(--base-font) * 1.125); /* 18/16= 1.125 */
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* 레이아웃 */
+.container{
+  width: 1272px;
+  margin:0 auto;
+}
+.inner-pd{
+  padding: calc(var(--base-unit) * 3) 0;
+}
+.inner-top-pd{
+  padding-top: calc(var(--base-unit) * 3);
 }
