@@ -4,6 +4,7 @@
 @import url('reset.css');
 @import url('flex-utility.css');
 
+
 /* :root 최상위 선택자 */
 :root{
   /* Layout */
@@ -36,10 +37,12 @@
   --button---primary: calc(var(--base-font) * 0.875); /* 14 / auto */
 }
 
+
 body{
   font-family: "Open Sans", sans-serif;
   font-size: var(--base-font);
 }
+
 
 /* 폰트 위계 */
 .text-heading-xl{
@@ -62,6 +65,12 @@ body{
   font-size: var(--body--m-plus); 
   line-height: var(--base-unit);
 }
+.text-nav{
+  font-size: var(--nav--item);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 
 /* 링크 버튼 */
 .btn{
@@ -77,10 +86,14 @@ body{
   gap: 5px;
   text-transform: uppercase;
 }
+.btn .material-icons{
+  font-size: 14px;
+}
 .btn-primary{
   background: var(--primary);
   color: var(--secondary);
 }
+
 
 /* 폼 요소 */
 .hero{
@@ -121,6 +134,7 @@ button{
   font-weight: bold;
 }
 
+
 /* 레이아웃 */
 .container{
   width: 1272px;
@@ -133,4 +147,24 @@ button{
   padding-top: calc(var(--base-unit) * 3);
 }
 
+
 /* 헤더 */
+body > header{
+  background: var(--white);
+  padding: var(--base-unit) 0;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+.logo span{
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  /* ir기법 */
+}
+header nav ul{
+  gap: 10px;
+}
+header nav ul li:first-child{
+  margin-right: 40px;
+}
