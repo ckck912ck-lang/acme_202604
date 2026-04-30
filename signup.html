@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signin - ACME</title>
+    <title>Signup - ACME</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,8 +29,14 @@
     <main>
       <section class="hero inner-pd">
         <div class="container d-flex flex-column align-items-center g-1">
-          <h2 class="text-heading-xl">Sign in</h2>
+          <h2 class="text-heading-xl">create your free account</h2>
           <form action="">
+            <div class="field">
+              <label for="useremail">
+                <span class="material-icons">person</span>
+              </label>
+              <input type="text" id="useremail" placeholder="Name" />
+            </div>
             <div class="field">
               <label for="useremail">
                 <span class="material-icons">email</span>
@@ -43,6 +49,12 @@
               </label>
               <input type="text" id="userpw" placeholder="password" />
             </div>
+            <div class="field">
+              <label for="userpwcf">
+                <span class="material-icons">lock</span>
+              </label>
+              <input type="text" id="userpwcf" placeholder="password confirm" />
+            </div>
             <button type="submit">Sign in</button>
           </form>
           <a href="" class="text-link">I forgot my password</a>
@@ -50,12 +62,8 @@
       </section>
     </main>
 
-    <footer class="inner-pd d-flex flex-column align-items-center g-2">
-      <div class="content d-flex flex-column g-1">
-        <h3 class="text-body-l">Create your free account.</h3>
-        <p class="text-body-m-plus">No hidden fees, no credit card required</p>
-      </div>
-      <a href="#" class="btn btn-primary big">sign up for free</a>
+    <footer class="inner-pd text-center">
+      <a href="#" class="text-link">Already have an account? Sign in</a>
     </footer>
   </body>
 </html>
