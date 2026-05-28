@@ -1,3 +1,9 @@
+import { renderHeader } from "./module/header.js";
+import { renderFooter } from "./module/footer.js";
+renderHeader();
+renderFooter();
+addToCart();
+
 /* 
 window에 스크롤이 생기면 할일
   그 스크롤양이 0보다 크면 body에 active 추가
